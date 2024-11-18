@@ -1,0 +1,63 @@
+#gallery {
+    padding: 40px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+    gap: 20px;
+    margin: 20px 10%;
+}
+
+.galleryItem {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.galleryItem img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.galleryItem h3 {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.galleryItem p {
+    font-size: 16px;
+    color: #666;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagination button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 18px;
+    color: #333;
+}
